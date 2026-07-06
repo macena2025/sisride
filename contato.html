@@ -96,6 +96,32 @@
   }
 }
 
+
+/* Pente fino: links e destaque do menu */
+.menu a{
+  border-bottom:3px solid transparent;
+  padding-bottom:8px;
+  transition:.2s ease;
+}
+.menu a:hover,
+.menu a:focus-visible,
+.menu a.active{
+  color:var(--purple);
+  border-bottom-color:var(--purple);
+}
+@media(max-width:900px){
+  .menu a{
+    border-bottom:1px solid #eee;
+    padding-bottom:15px;
+  }
+  .menu a:hover,
+  .menu a:focus-visible,
+  .menu a.active{
+    color:var(--purple);
+    border-bottom-color:#eee;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -105,12 +131,12 @@
     <nav class="menu" id="mainMenu" aria-label="Menu principal">
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre</a>
-      <a href="seja-motorista.html">Seja uma Motorista</a>
       <a href="blog.html">Blog</a>
       <a href="contato.html" class="active">Contato</a>
-      <a href="seja-franqueado.html" class="mobile-only">Seja um Franqueado</a>
+      <a href="motorista.html">Seja uma Motorista</a>
+      <a href="franqueado.html" class="mobile-only">Seja um Franqueado</a>
     </nav>
-    <a href="seja-franqueado.html" class="topbtn">Seja um Franqueado</a>
+    <a href="franqueado.html" class="topbtn">Seja um Franqueado</a>
     <button class="hamb" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainMenu">☰</button>
   </div>
 </header>
@@ -158,8 +184,8 @@
       </div>
       <div class="foot-col">
         <h4>Serviços</h4>
-        <a href="seja-motorista.html">Seja uma Motorista</a>
-        <a href="seja-franqueado.html">Seja um Franqueado</a>
+        <a href="motorista.html">Seja uma Motorista</a>
+        <a href="franqueado.html">Seja um Franqueado</a>
       </div>
       <div class="foot-col">
         <h4>Suporte</h4>
